@@ -1,0 +1,50 @@
+.tournaments_view {
+	padding: 66px 0 120px;
+}
+
+.tour_wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 39px;
+}
+
+.list_wrapper {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: 200px;
+	column-gap: 69px;
+}
+
+.list {
+	display: flex;
+	align-items: center;
+	gap: 48px;
+	border-bottom: 1px solid #d3d4d6;
+	padding: 5px 0;
+	.club_box {
+		display: flex;
+		align-items: center;
+		gap: 36px;
+		.teem {
+			display: flex;
+			align-items: center;
+			min-width: 155px;
+			gap: 19px;
+			img {
+				width: 45px;
+				height: 41px;
+			}
+		}
+		.vs {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			background: $primary-color;
+			color: white;
+		}
+	}
+}
