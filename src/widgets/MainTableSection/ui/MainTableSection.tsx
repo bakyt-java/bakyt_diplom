@@ -55,7 +55,7 @@ export const MainTableSection = () => {
 					<TableV1
 						rows={rows}
 						buttonTitle='Смотреть полную статистику'
-						path=''
+						path='/bombers'
 						tableTitle='Бомбардиры КПЛ 2022/23'
 					/>
 				</div>

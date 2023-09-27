@@ -22,14 +22,22 @@
 			}
 
 			.form {
+				display: flex;
+				gap: 23px;
+				align-items: center;
 				input {
 					outline: 0;
 					border: 0;
 					border-radius: 12px;
-					padding: 7px 12px;
+					padding: 12px 12px;
 					background-color: white;
 					color: grey;
 					width: 75%;
+				}
+
+				.button {
+					background: inherit;
+					cursor: pointer;
 				}
 			}
 

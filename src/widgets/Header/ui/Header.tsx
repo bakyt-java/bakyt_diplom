@@ -16,7 +16,10 @@ export const Header = () => {
 		<header className={cls.header}>
 			<Layout>
 				<nav className={cls.header_box}>
-					<div className={cls.logo}>
+					<div
+						className={cls.logo}
+						onClick={() => navigate("/")}
+					>
 						<img
 							src={logo}
 							alt='Логотип'

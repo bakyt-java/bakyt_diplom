@@ -1,7 +1,19 @@
+import { Title } from "./Title/Title";
 import { Layout } from "./Layout/Layout";
-import { MatchPano } from "./MatchPano/MatchPano";
 import { TableV1 } from "./TableV1/TableV1";
 import { NewsCard } from "./NewsCard/NewsCard";
-import { Title } from "./Title/Title";
+import { MatchPano } from "./MatchPano/MatchPano";
+import { BomberTitle } from "./BomberTitle/BomberTitle";
+import { BomberTable } from "./BomberTable/BomberTable";
+import { AssistTable } from "./AssistsTable/AssistsTable";
 
-export { Layout, MatchPano, TableV1, NewsCard, Title };
+export {
+	Title,
+	Layout,
+	TableV1,
+	NewsCard,
+	MatchPano,
+	BomberTitle,
+	BomberTable,
+	AssistTable,
+};

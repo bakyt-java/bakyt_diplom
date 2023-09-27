@@ -1,9 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-import cls from "./Footer.module.scss";
 import { Layout } from "@/shared/ui";
 
+import button_icon from "@/shared/images/button_icon.png";
+
+import cls from "./Footer.module.scss";
+
 export const Footer = () => {
+	const navigate = useNavigate();
 	return (
 		<footer className={cls.footer}>
 			<Layout>
@@ -36,12 +41,20 @@ export const Footer = () => {
 							оставаться на связи!
 						</p>
 
-						<form className={cls.form}>
+						<form
+							className={cls.form}
+							onSubmit={(e) => e.preventDefault()}
+						>
 							<input
 								type='text'
 								placeholder='Enter Email'
 							/>
-							<button>asd</button>
+							<div className={cls.button}>
+								<img
+									src={button_icon}
+									alt=''
+								/>
+							</div>
 						</form>
 					</div>
 				</article>

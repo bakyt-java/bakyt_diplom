@@ -2,6 +2,8 @@ import { RouteProps } from "react-router-dom";
 
 import {
 	AboutUsView,
+	AssistsView,
+	BombersView,
 	MainView,
 	NewsDetailedView,
 	NewsView,
@@ -18,6 +20,8 @@ export enum AppRoutes {
 	NEWS_DETAILED = "NEWS_DETAILED",
 	TOURNAMENT_TABLE = "TOURNAMENT_TABLE",
 	TOURNAMENT = "TOURNAMENT",
+	BOMBERS = "BOMBERS",
+	ASSISTS = "ASSISTS",
 }
 
 export const RoutePath: Record<AppRoutes, string> = {
@@ -28,6 +32,8 @@ export const RoutePath: Record<AppRoutes, string> = {
 	[AppRoutes.NEWS_DETAILED]: "/news_detailed/:id",
 	[AppRoutes.TOURNAMENT_TABLE]: "/tournament_table",
 	[AppRoutes.TOURNAMENT]: "/tournaments",
+	[AppRoutes.BOMBERS]: "/bombers",
+	[AppRoutes.ASSISTS]: "/assists",
 };
 
 export const routeConfigPublic: Record<AppRoutes, RouteProps> = {
@@ -58,5 +64,13 @@ export const routeConfigPublic: Record<AppRoutes, RouteProps> = {
 	[AppRoutes.TOURNAMENT]: {
 		path: RoutePath.TOURNAMENT,
 		element: <TournamentsView />,
+	},
+	[AppRoutes.ASSISTS]: {
+		path: RoutePath.ASSISTS,
+		element: <AssistsView />,
+	},
+	[AppRoutes.BOMBERS]: {
+		path: RoutePath.BOMBERS,
+		element: <BombersView />,
 	},
 };
