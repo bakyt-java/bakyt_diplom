@@ -15,14 +15,14 @@ export const Header = () => {
 	return (
 		<header className={cls.header}>
 			<Layout>
-				<nav className={cls.header_box}>
+				<section className={cls.header_box}>
 					<div
 						className={cls.logo}
 						onClick={() => navigate("/")}
 					>
 						<img
 							src={logo}
-							alt='Логотип'
+							alt='Club logo'
 						/>
 					</div>
 					<ul className={cls.nav_container}>
