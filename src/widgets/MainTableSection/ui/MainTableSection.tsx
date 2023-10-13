@@ -18,6 +18,7 @@ export const MainTableSection = () => {
 				<div className={cls.news_container}>
 					{newsData.map((news) => (
 						<div
+							
 							className={cls.news_card}
 							key={news.id}
 						>
@@ -27,7 +28,7 @@ export const MainTableSection = () => {
 									alt='image'
 								/>
 							</div>
-							<div className={cls.title_container}>
+							<div  className={cls.title_container}>
 								<p className={cls.time}>{news.time}</p>
 								<p className={cls.title}>{news.title}</p>
 								<p className={cls.subtitle}>{news.subtitle}</p>
