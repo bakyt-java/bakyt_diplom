@@ -53,7 +53,7 @@ export const Header = () => {
 							);
 						})}
 					</ul>
-				</nav>
+				</section>
 			</Layout>
 		</header>
 	);
