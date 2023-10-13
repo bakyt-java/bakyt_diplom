@@ -4,8 +4,9 @@ import { assistsViewData } from "../constants";
 
 import cls from "./AssistsView.module.scss";
 
+
 const AssistsView = () => {
-	return (
+  	return (
 		<Layout>
 			<div className={cls.title}>
 				<BomberTitle title='Ассисты' />
