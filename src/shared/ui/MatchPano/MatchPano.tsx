@@ -11,9 +11,10 @@ export const MatchPano = ({ matchPanoData, title }: MatchPanoProps) => {
 	return (
 		<article className={cls.match_pano}>
 			<h3 className={cls.match_pano_title}>{title}</h3>
-			<div className={cls.card_container}>
+			<div style={{ paddingLeft: "20px", paddingRight: "20px"}} className={cls.card_container}>
 				{matchPanoData.map((pano) => (
 					<div
+						
 						className={cls.card}
 						key={pano.id}
 					>
